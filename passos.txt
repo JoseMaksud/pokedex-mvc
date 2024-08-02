@@ -14,3 +14,11 @@ Abrir Nuget Gallery
         Microsoft.EntityFrameworkCore.Tools
         Pomelo.EntityFrameworkCore.MySql
         Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+dotnet tool install --global dotnet-ef --version 8.0.7
+
+dotnet tool update --global dotnet-ef --version 8.0.7
+
+dotnet ef migrations add inicializando-banco
+
+dotnet ef database update

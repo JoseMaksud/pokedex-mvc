@@ -50,13 +50,13 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "0c57583d-ac41-4702-a71a-fe28ac11d48f",
+                            Id = "03993696-c988-407d-960e-b3185fce1a53",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "b3430e45-8bf3-4850-82df-925e82c4d182",
+                            Id = "a72cdb61-a3a5-4e5e-9d8b-bb5241cec658",
                             Name = "Usuário",
                             NormalizedName = "USUÁRIO"
                         });
@@ -153,17 +153,17 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b0f76eab-6c04-43ec-8334-1a7b40bb57e3",
+                            Id = "71a606c4-d66a-4b57-a055-d3f93b919474",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "09d1ade3-f540-43e9-a0eb-eb408962d69d",
+                            ConcurrencyStamp = "2ace45c9-df27-400b-b896-f48e159008c0",
                             Email = "admin@pokedex.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@POKEDEX.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEokO/7CUAfna+AsOAwK6zgjzc4LFST7Gv0W/VdDATuAXkNzCeYPHAfKNr4pf6hlBQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDETN8RrfL/cmHOVaY8WGC9uEJ5IHTsufAx8mR4qTbXtRAHXyZkW7Rd6966I5+grBw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7641a9e8-9bea-4eff-9774-c743b978af91",
+                            SecurityStamp = "45f0f0e6-2e71-4b15-b46f-9ec03780c018",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -233,13 +233,13 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "b0f76eab-6c04-43ec-8334-1a7b40bb57e3",
-                            RoleId = "0c57583d-ac41-4702-a71a-fe28ac11d48f"
+                            UserId = "71a606c4-d66a-4b57-a055-d3f93b919474",
+                            RoleId = "03993696-c988-407d-960e-b3185fce1a53"
                         },
                         new
                         {
-                            UserId = "b0f76eab-6c04-43ec-8334-1a7b40bb57e3",
-                            RoleId = "b3430e45-8bf3-4850-82df-925e82c4d182"
+                            UserId = "71a606c4-d66a-4b57-a055-d3f93b919474",
+                            RoleId = "a72cdb61-a3a5-4e5e-9d8b-bb5241cec658"
                         });
                 });
 
@@ -406,7 +406,7 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "b0f76eab-6c04-43ec-8334-1a7b40bb57e3",
+                            UsuarioId = "71a606c4-d66a-4b57-a055-d3f93b919474",
                             DataNascimento = new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/img/users/avatar.png",
                             Nome = "José Francisco Dos Santos Neto"

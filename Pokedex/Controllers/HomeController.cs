@@ -21,7 +21,7 @@ public class HomeController : Controller
     {
         HomeVM home = new() {
             Pokemons = _context.Pokemons.ToList(),
-            Tipos = _context.Tipos.ToList()
+            Tipos = _context.Tipos.ToList(),
         };
         return View();
     }

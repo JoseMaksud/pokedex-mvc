@@ -50,13 +50,13 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "03993696-c988-407d-960e-b3185fce1a53",
+                            Id = "0f122a8b-22ba-47e8-b486-decebaad1d34",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "a72cdb61-a3a5-4e5e-9d8b-bb5241cec658",
+                            Id = "15b9acc1-23d6-43d6-8161-b85333dac042",
                             Name = "Usuário",
                             NormalizedName = "USUÁRIO"
                         });
@@ -153,17 +153,17 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "71a606c4-d66a-4b57-a055-d3f93b919474",
+                            Id = "3c205b2e-077c-4617-8ae1-b772de1e8b5e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2ace45c9-df27-400b-b896-f48e159008c0",
+                            ConcurrencyStamp = "fb9dd5ed-ffd1-4213-a11c-25594d741ad2",
                             Email = "admin@pokedex.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@POKEDEX.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDETN8RrfL/cmHOVaY8WGC9uEJ5IHTsufAx8mR4qTbXtRAHXyZkW7Rd6966I5+grBw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFRBtYrku7dA89+9wyNcXNLRVw/CwGUoR+qGDtHwBANdWWB4//x0IVsuAxRfNJTuAw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "45f0f0e6-2e71-4b15-b46f-9ec03780c018",
+                            SecurityStamp = "0c019c86-e116-4709-8897-80862a88653e",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -233,13 +233,13 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "71a606c4-d66a-4b57-a055-d3f93b919474",
-                            RoleId = "03993696-c988-407d-960e-b3185fce1a53"
+                            UserId = "3c205b2e-077c-4617-8ae1-b772de1e8b5e",
+                            RoleId = "0f122a8b-22ba-47e8-b486-decebaad1d34"
                         },
                         new
                         {
-                            UserId = "71a606c4-d66a-4b57-a055-d3f93b919474",
-                            RoleId = "a72cdb61-a3a5-4e5e-9d8b-bb5241cec658"
+                            UserId = "3c205b2e-077c-4617-8ae1-b772de1e8b5e",
+                            RoleId = "15b9acc1-23d6-43d6-8161-b85333dac042"
                         });
                 });
 
@@ -293,7 +293,6 @@ namespace Pokedex.Migrations
                         .HasColumnType("varchar(400)");
 
                     b.Property<string>("Descricao")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("varchar(1000)");
 
@@ -396,8 +395,8 @@ namespace Pokedex.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("varchar(30)");
+                        .HasMaxLength(60)
+                        .HasColumnType("varchar(60)");
 
                     b.HasKey("UsuarioId");
 
@@ -406,10 +405,10 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "71a606c4-d66a-4b57-a055-d3f93b919474",
+                            UsuarioId = "3c205b2e-077c-4617-8ae1-b772de1e8b5e",
                             DataNascimento = new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/img/users/avatar.png",
-                            Nome = "José Francisco Dos Santos Neto"
+                            Nome = "José Antonio Gallo Junior"
                         });
                 });
 

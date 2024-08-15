@@ -24,7 +24,6 @@ public class Pokemon
     [StringLength(30)]
     public string Nome { get; set; }
 
-    [Required]
     [StringLength(1000)]
     public string Descricao { get; set; }
 
@@ -42,5 +41,5 @@ public class Pokemon
     [StringLength(400)]
     public string Animacao { get; set; }
 
-    public ICollection<PokemonTipo> Tipos { get; set; }  
+    public ICollection<PokemonTipo> Tipos { get; set; }
 }

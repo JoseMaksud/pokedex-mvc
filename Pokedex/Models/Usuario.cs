@@ -13,13 +13,12 @@ public class Usuario
     public IdentityUser ContaUsuario { get; set; }
 
     [Required]
-    [StringLength(30)]
+    [StringLength(60)]
     public string Nome { get; set; }
 
     [DataType(DataType.Date)]
     public DateTime DataNascimento { get; set; }
-
+    
     [StringLength(200)]
     public string Foto { get; set; }
-
 }

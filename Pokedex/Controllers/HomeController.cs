@@ -41,13 +41,18 @@ public class HomeController : Controller
                         .Include(p => p.Regiao)
                         .Include(p => p.Genero)
                         .SingleOrDefault();
-
+        
         DetailVM detailVM = new()
         {
             Atual = pokemon,
-            Anterior = _context.Pokemons.OrderByDescending(p => p.Numero).FirstOrDefault(p => p.Numero < id),
-            Proximo = _context.Pokemons.OrderBy(p => p.Numero).FirstOrDefault(p => p.Numero > id),
+            Anterior = _context.Pokemons
+                .OrderByDescending(p => p.Numero)
+                .FirstOrDefault(p => p.Numero < id),
+            Proximo = _context.Pokemons
+                .OrderBy(p => p.Numero)
+                .FirstOrDefault( p => p.Numero > id)
         };
+        
         return View(detailVM);
     }
     

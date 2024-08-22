@@ -22,3 +22,5 @@ dotnet tool update --global dotnet-ef --version 8.0.7
 dotnet ef migrations add inicializando-banco
 
 dotnet ef database update
+
+SQL Inserir Dados e executar no Workbench

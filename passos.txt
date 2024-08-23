@@ -14,6 +14,8 @@ Abrir Nuget Gallery
         Microsoft.EntityFrameworkCore.Tools
         Pomelo.EntityFrameworkCore.MySql
         Microsoft.AspNetCore.Identity.EntityFrameworkCore
+        Microsoft.VisualStudio.Web.CodeGeneration.Design
+        Microsoft.EntityFrameworkCore.SqlServer
 
 dotnet tool install --global dotnet-ef --version 8.0.7
 
@@ -24,3 +26,9 @@ dotnet ef migrations add inicializando-banco
 dotnet ef database update
 
 SQL Inserir Dados e executar no Workbench
+
+dotnet tool install -g dotnet-aspnet-codegenerator
+
+dotnet-aspnet-codegenerator controller -name NomeController -m ClasseDados -dc ClasseContexto -l DefiniteUmLayout // -udl ParaLayoutPadrão --relativeFolderPath Controllers
+
+dotnet-aspnet-codegenerator controller -name TiposController -m Tipo -dc AppDbContext -l "~/Views/Shared/_LayoutAdmin.cshtml" --relativeFolderPath Controllers

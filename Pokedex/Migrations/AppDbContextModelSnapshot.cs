@@ -50,13 +50,13 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "69bae61d-6db9-4aa0-9673-b98b2e59ee4f",
+                            Id = "84deb931-1612-4840-8791-e1b797409f50",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "08798982-85ce-4fad-a55b-2d36e02a74d7",
+                            Id = "4c0b17c6-4978-4f3c-b610-de863e4c009d",
                             Name = "Usuário",
                             NormalizedName = "USUÁRIO"
                         });
@@ -153,17 +153,17 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "95cfeaae-0351-4811-89d1-021ddd66dd06",
+                            Id = "e63f057a-ddf8-416a-a1ae-2ca25c060f2b",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "54a3ce71-633d-4913-a317-48b681b897f6",
+                            ConcurrencyStamp = "6ebe16a0-3735-4e86-b5e7-14a8719125dd",
                             Email = "admin@pokedex.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@POKEDEX.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBN/efrydiT/zlhBB3mFXtxL+zowp4Aj3lglmDREjd9c/yfL6xi4ayXE+cwYVIvs/w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAR4Li7PTX4rtUwVraB1BvjMcIHtSjQr+PETwFsqipCGjDYKwD3UzrX2JdTVg98qfQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "99968747-8bbe-4d3e-8826-ee59fe955d04",
+                            SecurityStamp = "e57f8c3c-ff38-4b23-9a52-0f5f130973f7",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -233,13 +233,13 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "95cfeaae-0351-4811-89d1-021ddd66dd06",
-                            RoleId = "69bae61d-6db9-4aa0-9673-b98b2e59ee4f"
+                            UserId = "e63f057a-ddf8-416a-a1ae-2ca25c060f2b",
+                            RoleId = "84deb931-1612-4840-8791-e1b797409f50"
                         },
                         new
                         {
-                            UserId = "95cfeaae-0351-4811-89d1-021ddd66dd06",
-                            RoleId = "08798982-85ce-4fad-a55b-2d36e02a74d7"
+                            UserId = "e63f057a-ddf8-416a-a1ae-2ca25c060f2b",
+                            RoleId = "4c0b17c6-4978-4f3c-b610-de863e4c009d"
                         });
                 });
 
@@ -405,7 +405,7 @@ namespace Pokedex.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "95cfeaae-0351-4811-89d1-021ddd66dd06",
+                            UsuarioId = "e63f057a-ddf8-416a-a1ae-2ca25c060f2b",
                             DataNascimento = new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/img/users/avatar.png",
                             Nome = "José Antonio Gallo Junior"
